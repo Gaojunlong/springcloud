@@ -1,0 +1,23 @@
+server:
+  port: 8001
+
+
+spring:
+  application:
+    name: cloud-provider-hystrix-payment
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://175.24.121.46:3306/cloud2020?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: admin
+#    password: KooKoozei?p@e7kohceico7shood7zaes9ier;igh{oo3EPa
+
+eureka:
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+    # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eureka7001.com:7001/eureka/

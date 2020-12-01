@@ -1,0 +1,9 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: cloud-provider-order
+  cloud:
+    zookeeper:
+      connect-string: 175.24.121.46:2181
